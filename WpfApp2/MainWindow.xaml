@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Przepisy v1.0 - Stable" Height="655" Width="802" ResizeMode="NoResize" Background="White">
+    <Grid Background="White" MinWidth="800" MinHeight="600" Margin="0,-166,1,-140" MaxWidth="800" MaxHeight="600" HorizontalAlignment="Center" VerticalAlignment="Center" Height="932" Width="795">
+        
+        <Button Name="LoadRecipes" Content="Załaduj przepisy" HorizontalAlignment="Left" Height="56" Margin="49,32,0,0" VerticalAlignment="Top" Width="191" Click="LoadRecipes_Click"/>
+
+        <ListView Name="listView" Visibility="Visible" ItemsSource="{Binding SourceCollection}" Margin="49,103,49,0" SelectionChanged="ListViewItemClicked" Height="481" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nazwa" DisplayMemberBinding="{Binding Path = Nazwa}" Width="100" />
+                    <GridViewColumn Header="Przepis" DisplayMemberBinding="{Binding Path = Przepis}" Width="250" />
+                    <GridViewColumn Header="Data" DisplayMemberBinding="{Binding Path = Data}" Width="100" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Name="AddRecipe" Content="Dodaj Przepis" HorizontalAlignment="Left" Height="56" Margin="560,32,0,0" VerticalAlignment="Top" Width="191" Click="AddRecipe_Click"/>
+    </Grid>
+</Window>

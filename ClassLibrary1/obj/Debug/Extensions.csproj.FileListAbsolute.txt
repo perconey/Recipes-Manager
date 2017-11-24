@@ -1,0 +1,5 @@
+C:\Users\Roman\Desktop\C#\WpfApp2\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Roman\Desktop\C#\WpfApp2\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Roman\Desktop\C#\WpfApp2\ClassLibrary1\obj\Debug\Extensions.csprojResolveAssemblyReference.cache
+C:\Users\Roman\Desktop\C#\WpfApp2\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Roman\Desktop\C#\WpfApp2\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

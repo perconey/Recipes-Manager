@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp2.RecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Przepis" Height="400" Width="573.931" MinWidth="400" MinHeight="396" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock x:Name="recipeNameTextBlock" Padding="5" HorizontalAlignment="Left" Height="41" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" TextDecorations="{x:Null}" FontSize="20" TextAlignment="Center" Background="#FFECE7E7"/>
+        <TextBlock x:Name="recipeDescriptionTextBlock" HorizontalAlignment="Left" Height="275" Margin="10,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Background="#FFF0ECEC"/>
+        <TextBlock x:Name="recipeDateTextBlock" HorizontalAlignment="Left" Height="16" Margin="11,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="373" Background="#FFD4D2D2"/>
+
+        <!--<DataGrid x:Name="ingredientsGrid" AutoGenerateColumns="False" Margin="400,10,10,16">
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Width="80" Header="Nazwa" Binding="{Binding Iname}"/>
+                <DataGridTextColumn Width="34" Header="Ilość" Binding="{Binding Iamount}"/>
+                <DataGridTextColumn Width="35" Header="Jedn" Binding="{Binding Iunit}" />
+
+            </DataGrid.Columns>
+        </DataGrid>-->
+
+        <ListView Name="ingredientsListView" Visibility="Visible" ItemsSource="{Binding SourceCollection}" Margin="397,10,10,0" Height="345" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="80" Header="Nazwa" DisplayMemberBinding="{Binding Path = Iname}" />
+                    <GridViewColumn Width="34" Header="Ilosc" DisplayMemberBinding="{Binding Path = Iamount}" />
+                    <GridViewColumn Width="35" Header="Jedn" DisplayMemberBinding="{Binding Path = Iunit}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+
+
+    </Grid>
+</Window>

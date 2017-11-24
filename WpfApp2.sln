@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lista i przyciski", "WpfApp2\Lista i przyciski.csproj", "{81D27970-26B8-453F-8BD0-9C4B005E5B20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "UnitTestProject1\Tests.csproj", "{633E3F31-AEB5-4744-A13A-1A6EEA08E4D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "ClassLibrary1\Extensions.csproj", "{75705B4E-7733-478F-ABA2-6A245EE9459C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81D27970-26B8-453F-8BD0-9C4B005E5B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D27970-26B8-453F-8BD0-9C4B005E5B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D27970-26B8-453F-8BD0-9C4B005E5B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D27970-26B8-453F-8BD0-9C4B005E5B20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{633E3F31-AEB5-4744-A13A-1A6EEA08E4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633E3F31-AEB5-4744-A13A-1A6EEA08E4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633E3F31-AEB5-4744-A13A-1A6EEA08E4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633E3F31-AEB5-4744-A13A-1A6EEA08E4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75705B4E-7733-478F-ABA2-6A245EE9459C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75705B4E-7733-478F-ABA2-6A245EE9459C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75705B4E-7733-478F-ABA2-6A245EE9459C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75705B4E-7733-478F-ABA2-6A245EE9459C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
